@@ -1,0 +1,6 @@
+/Pacientes/
+└── {NombrePaciente}_{ID}/
+    └── {FechaEstudio}/
+        └── {TipoEstudio}/
+            ├── Imagen_001.dcm
+            ├── Imagen_002.dcm
