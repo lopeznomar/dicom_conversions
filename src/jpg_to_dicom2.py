@@ -7,7 +7,7 @@ from PIL import Image
 import numpy as np
 import requests
 
-# Información del paciente
+# Información del pacientecd..
 paciente = {
     "nombre": "Ramon Santiago",
     "id": "4883071",
@@ -19,7 +19,13 @@ paciente = {
 
 # Directorios base
 input_folder = r"C:\PythonApps\orthanc\imagenes_jpg"
-output_base = os.path.join("C:\\PythonApps\\orthanc\\imagenes_dcm", f"{paciente['nombre'].replace(' ', '_')}_{paciente['id']}")
+fecha_estudio = datetime.datetime.now().strftime("%Y-%m-%d")
+output_base = os.path.join(
+    "C:\\PythonApps\\orthanc\\Pacientes",
+    f"{paciente['nombre'].replace(' ', '_')}_{paciente['id']}",
+    fecha_estudio,
+    paciente["estudio"].replace(" ", "_")
+)
 
 # Crear carpeta si no existe
 os.makedirs(output_base, exist_ok=True)

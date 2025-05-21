@@ -53,4 +53,4 @@ def create_dicom_from_jpg(jpg_path, output_path, patient_name="Ramon Santiago", 
     print(f"✅ DICOM guardado: {output_path}")
 
 # USO EJEMPLO:
-create_dicom_from_jpg("RS1.jpg", "salida1.dcm", patient_name="Ramon Santiago", patient_id="4883071")
+create_dicom_from_jpg("C:\PythonApps\orthanc\jpg_images\RS1.jpg", "C:\PythonApps\orthanc\dico_converted\RX1.dcm", patient_name="Ramon Santiago", patient_id="4883071")
